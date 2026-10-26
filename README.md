@@ -35,7 +35,7 @@ library(cipwnormR)
 ## CIPW norm for a geochemical dataset
 
 The CIPW Norm is the most commonly used calculation algorithm to
-estimate the standard mineral assemblages for igneous rocks \[cipw()\],
+estimate the standard mineral assemblages for igneous rocks `cipw()`,
 generated over more than a hundred years ago and thereafter modified by
 some authors to the passage of the years (e.g., Verma et al., 2002). It
 is based upon assumptions about the order of mineral formation and known
@@ -62,7 +62,7 @@ head(Andes_cipw[, c('Magma', 'Rock.TAS', 'Fe.ratio', 'Q', 'Ab', 'An')])
 #> SAR-00-03 12.01446
 ```
 
-In the option \[cipw_trace()\], the trace elements that can be used are
+In the option `cipw_trace()`, the trace elements that can be used are
 Ba, Cl, Co, Cr Cs, F, Li, Ni, Rb, S, Sr, V and Zr. Additionally, the
 oxides concentrations of Cr2O3, NiO and SO3 (expressed as wt. percent)
 are handled like trace elements as well. However Cr2O3 are preferable to
@@ -94,7 +94,7 @@ head(Andes_cipw_trace[, c('Magma', 'Rock.TAS', 'Fe.ratio', 'Q', 'Ab', 'An')])
 Computed from the chemical composition, the normative mineralogy is an
 alternative approach for mineralogical classification and useful for set
 up the naming of igneous rocks (as parts of the TAS classification,
-\[TAS_plot()\]).
+`TAS_plot()`).
 
 ``` r
 data(TestTAS)
