@@ -12,11 +12,13 @@ of interest}
 
 \item{poly.pnts}{a 2-column matrix or dataframe defining the locations of
 vertices of the polygon of interest}
+
+\item{tol}{numeric. Tolerance}
 }
 \value{
 A 3-column dataframe where the first 2 columns are the original
-locations of the points. The third column (names pip) is a vector of binary
-values where 0 represents points not with the polygon and 1 within the
+locations of the points. The third column (names pip) is a logical vector of binary
+values where \code{FALSE} represents points not with the polygon and \code{TRUE} within the
 polygon.
 }
 \description{

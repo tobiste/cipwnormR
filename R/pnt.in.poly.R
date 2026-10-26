@@ -17,9 +17,10 @@
 #' of interest
 #' @param poly.pnts a 2-column matrix or dataframe defining the locations of
 #' vertices of the polygon of interest
+#' @param tol numeric. Tolerance
 #' @return A 3-column dataframe where the first 2 columns are the original
-#' locations of the points. The third column (names pip) is a vector of binary
-#' values where 0 represents points not with the polygon and 1 within the
+#' locations of the points. The third column (names pip) is a logical vector of binary
+#' values where `FALSE` represents points not with the polygon and `TRUE` within the
 #' polygon.
 #' @examples
 #' #define the points and polygon
@@ -74,6 +75,6 @@ pnt_in_poly <- function(pnts, poly.pnts, tol = sqrt(.Machine$double.eps)) {
     angle  <- angle + atan2(cr, dt)         # signed angle subtended by edge
   }
   
-  # |sum| ~ 2*pi inside, ~ 0 outside; boundary counts as inside
-  data.frame(pnts, pip = as.integer(on_bnd | abs(angle) > pi))
+  pip <- on_bnd | abs(angle) > pi  # |sum| ~ 2pi inside, ~0 outside
+  data.frame(pnts, pip = pip)
 }
