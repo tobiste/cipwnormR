@@ -8,7 +8,7 @@
 A data.frame with 92 rows and 3 columns, including the row names.
 }
 \source{
-url{http://www.chem.qmul.ac.uk/iupac/AtWt/}
+\url{http://www.chem.qmul.ac.uk/iupac/AtWt/}
 }
 \usage{
 data(AtomWeight)
@@ -30,7 +30,8 @@ Wieser, M.E., and others. 2013. Pure and Applied Chemistry. International Union 
 Other datasets:
 \code{\link{Andes}},
 \code{\link{MinWeight}},
-\code{\link{OxiWeight}}
+\code{\link{OxiWeight}},
+\code{\link{TestTAS}}
 }
 \concept{datasets}
 \keyword{datasets}

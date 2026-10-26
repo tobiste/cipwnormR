@@ -56,7 +56,7 @@
 #' @returns invisibly, a data.frame with the plotted coordinates
 #'   (\code{S} = SiO2, \code{NK} = Na2O + K2O, wt\%).
 #' @export
-#' @importFrom graphics plot.new plot.window axis box title lines text points
+#' @importFrom graphics plot.new plot.window axis box title lines text points par
 #'
 #' @examples
 #' data(TestTAS)

@@ -27,7 +27,8 @@ Wieser, M.E., and others. 2013. Pure and Applied Chemistry. International Union 
 Other datasets:
 \code{\link{Andes}},
 \code{\link{AtomWeight}},
-\code{\link{OxiWeight}}
+\code{\link{OxiWeight}},
+\code{\link{TestTAS}}
 }
 \concept{datasets}
 \keyword{datasets}

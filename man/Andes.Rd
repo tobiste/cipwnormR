@@ -30,7 +30,8 @@ Mamani, M., Worner, G., and Sempere, T. 2010. Geochemical variations in igneous 
 Other datasets:
 \code{\link{AtomWeight}},
 \code{\link{MinWeight}},
-\code{\link{OxiWeight}}
+\code{\link{OxiWeight}},
+\code{\link{TestTAS}}
 }
 \concept{datasets}
 \keyword{datasets}

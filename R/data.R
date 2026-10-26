@@ -38,7 +38,7 @@
 #' @usage data(AtomWeight)
 #' 
 #' @source 
-#' url{http://www.chem.qmul.ac.uk/iupac/AtWt/}
+#' \url{http://www.chem.qmul.ac.uk/iupac/AtWt/}
 #'  
 #' @references
 #' Wieser, M.E., and others. 2013. Pure and Applied Chemistry. International Union of Pure and Applied Chemistry (IUPAC). v. 78, no. 11, pp. 2051--2066. 
@@ -84,9 +84,6 @@
 #' 
 #' @usage data(OxiWeight)
 #' 
-#' @source 
-#' url{http://www.chem.qmul.ac.uk/iupac/AtWt/}
-#'  
 #' @references
 #' Wieser, M.E., and others. 2013. Pure and Applied Chemistry. International Union of Pure and Applied Chemistry (IUPAC). v. 78, no. 11, pp. 2051--2066. 
 #' 
@@ -117,4 +114,4 @@
 #' @examples
 #' data(TestTAS)
 #' head(TestTAS)
-"OxiWeight"
+"TestTAS"
