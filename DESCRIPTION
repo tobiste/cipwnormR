@@ -1,9 +1,12 @@
 Package: cipwnormR
-Title: What the Package Does (One Line, Title Case)
+Title: CIPW NORM For Geochemical Compositions
+Description: CIPW Norm (acronym from the surnames of the authors: Cross, Iddings, Pirrson and Washington)
+             is the most commonly used calculation algorithm to estimate the standard mineral assemblages
+             for igneous rocks from its geochemical composition. 
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Tobias", "Stephan", , "tobias.stephan1@yahoo.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9290-014X"))
 License: MIT + file LICENSE
 Config/roxygen2/version: 8.1.0
 Encoding: UTF-8

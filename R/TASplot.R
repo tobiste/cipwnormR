@@ -139,11 +139,11 @@
 #'
 #' @examples
 #' data(TestTAS)
-#' TASplot(TestTAS, col = "red")
+#' TASplot(TestTAS, col = "#56B4E9")
 #'
 #' data(Andes)
-#' TASplot(Andes, col = "darkgreen")
-#' TASplot(TestTAS, col = "red", add = TRUE)
+#' TASplot(Andes, col = "#E69F00", pch = 16)
+#' TASplot(TestTAS, col = "#56B4E9", add = TRUE)
 TASplot <- function(x, col = par("col"), pch = par("pch"), cex = par("cex"),
                     gridcolor = "grey20", alkcolor = "darkred",
                     labels = TRUE, add = FALSE, xlim = NULL, ylim = NULL, ...) {
