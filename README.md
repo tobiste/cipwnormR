@@ -1,2 +1,2 @@
-# cipw-normR
+# cipwnormR
 CIPW norm in R
