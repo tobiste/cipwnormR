@@ -9,6 +9,7 @@ TAS_plot(
   color = "black",
   size = 2,
   shape = 16,
+  fill = NA,
   gridcolor = "grey20",
   alkcolor = "darkred",
   ...
@@ -17,7 +18,7 @@ TAS_plot(
 \arguments{
 \item{x}{data.frame of major element analyses (see \code{\link{adj_rock}})}
 
-\item{color}{point colour}
+\item{color, fill}{point colour}
 
 \item{size}{point size}
 
@@ -40,8 +41,8 @@ recalculated with \code{\link{adj_rock}} before plotting.
 }
 \examples{
 data(TestTAS)
-TAS_plot(TestTAS, color = "red")
+TAS_plot(TestTAS, fill = "dodgerblue", shape = 21)
 
 data(Andes)
-TAS_plot(Andes, color = "darkgreen")
+TAS_plot(Andes, color = "darkgreen", shape = 21)
 }

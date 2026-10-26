@@ -41,7 +41,7 @@
 #' recalculated with \code{\link{adj_rock}} before plotting.
 #'
 #' @param x data.frame of major element analyses (see \code{\link{adj_rock}})
-#' @param color point colour
+#' @param color,fill point colour
 #' @param size point size
 #' @param shape point shape
 #' @param gridcolor colour of the TAS field boundaries and labels
@@ -55,11 +55,11 @@
 #'
 #' @examples
 #' data(TestTAS)
-#' TAS_plot(TestTAS, color = "red")
+#' TAS_plot(TestTAS, fill = "dodgerblue", shape = 21)
 #'
 #' data(Andes)
-#' TAS_plot(Andes, color = "darkgreen")
-TAS_plot <- function(x, color = "black", size = 2, shape = 16,
+#' TAS_plot(Andes, color = "darkgreen", shape = 21)
+TAS_plot <- function(x, color = "black", size = 2, shape = 16, fill = NA,
                     gridcolor = "grey20", alkcolor = "darkred", ...) {
   d <- adj_rock(x, ...)
   TAS <- data.frame(S = d$SiO2.adj, NK = d$Na2O.adj + d$K2O.adj)
@@ -73,7 +73,7 @@ TAS_plot <- function(x, color = "black", size = 2, shape = 16,
              size = 7, colour = gridcolor) +
     annotate("text", x = c(75, 45), y = c(2, 10), label = c("Subalkaline", "Alkaline"),
              colour = alkcolor, size = 6, fontface = "italic") +
-    geom_point(colour = color, size = size, shape = shape, na.rm = TRUE) +
+    geom_point(colour = color, size = size, fill = fill, shape = shape, na.rm = TRUE) +
     labs(x = expression(SiO[2] ~ "(wt.adj %)"),
          y = expression(Na[2] * O + K[2] * O ~ "(wt.adj %)"))
 }
